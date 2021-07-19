@@ -3,24 +3,25 @@ package com.newProyect10.demo.domain;
 import java.text.DateFormat;
 
 public class NotePad {
-    private int notepad;
-    private String nota;
+    private int noteId;
+    private String title;
+    private String note;
     private DateFormat datenote;
 
-    public int getNotepad() {
-        return notepad;
+    public int getNoteId() {
+        return noteId;
     }
 
-    public void setNotepad(int notepad) {
-        this.notepad = notepad;
+    public void setNoteId(int noteId) {
+        this.noteId = noteId;
     }
 
-    public String getNota() {
-        return nota;
+    public String getNote() {
+        return note;
     }
 
-    public void setNota(String nota) {
-        this.nota = nota;
+    public void setNote(String note) {
+        this.note = note;
     }
 
     public DateFormat getDatenote() {
@@ -29,5 +30,11 @@ public class NotePad {
 
     public void setDatenote(DateFormat datenote) {
         this.datenote = datenote;
+    }
+    public String getTitle(){
+        return title;
+    }
+    public void setTitle(String title){
+        this.title = title;
     }
 }

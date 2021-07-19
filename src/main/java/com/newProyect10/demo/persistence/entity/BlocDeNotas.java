@@ -8,13 +8,10 @@ import java.text.DateFormat;
 public class BlocDeNotas {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "idnote")
+    @Column(name = "id_nota")
     private Integer idnota;
-
-    @Column(name = "note")
+    private String titulo;
      private String nota;
-
-    @Column(name = "datenote")
      private DateFormat fecha;
 
     public Integer getIdnota() {
@@ -39,5 +36,11 @@ public class BlocDeNotas {
 
     public void setFecha(DateFormat fecha) {
         this.fecha = fecha;
+    }
+    public String getTitulo(){
+        return titulo;
+    }
+    public void getTitulo(String titulo){
+        this.titulo = titulo;
     }
 }

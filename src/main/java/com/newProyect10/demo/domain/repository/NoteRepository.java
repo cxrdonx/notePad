@@ -8,5 +8,5 @@ import java.util.List;
 
 public interface NoteRepository {
    List<NotePad>getAll();
-   NotePad save(NotePad notePad);
+   List<NotePad>save(NotePad notepad);
 }
