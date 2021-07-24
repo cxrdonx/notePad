@@ -1,10 +1,10 @@
-package com.newProyect10.demo;
+package com.project.NotePad;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class DemoApplicationTests {
+class NotePadApplicationTests {
 
 	@Test
 	void contextLoads() {

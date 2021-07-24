@@ -1,14 +1,13 @@
-package com.newProyect10.demo;
+package com.project.NotePad;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class DemoApplication {
+public class NotePadApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DemoApplication.class, args);
-
+		SpringApplication.run(NotePadApplication.class, args);
 	}
 
 }

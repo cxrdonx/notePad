@@ -1,4 +1,4 @@
-package com.newProyect10.demo.persistence.entity;
+package com.project.NotePad.persistence.entity;
 
 import javax.persistence.*;
 import java.text.DateFormat;
@@ -11,8 +11,8 @@ public class BlocDeNotas {
     @Column(name = "id_nota")
     private Integer idnota;
     private String titulo;
-     private String nota;
-     private DateFormat fecha;
+    private String nota;
+    private String fecha;
 
     public Integer getIdnota() {
         return idnota;
@@ -20,6 +20,14 @@ public class BlocDeNotas {
 
     public void setIdnota(Integer idnota) {
         this.idnota = idnota;
+    }
+
+    public String getTitulo() {
+        return titulo;
+    }
+
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
     }
 
     public String getNota() {
@@ -30,17 +38,11 @@ public class BlocDeNotas {
         this.nota = nota;
     }
 
-    public DateFormat getFecha() {
+    public String getFecha() {
         return fecha;
     }
 
-    public void setFecha(DateFormat fecha) {
+    public void setFecha(String fecha) {
         this.fecha = fecha;
-    }
-    public String getTitulo(){
-        return titulo;
-    }
-    public void getTitulo(String titulo){
-        this.titulo = titulo;
     }
 }
