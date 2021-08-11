@@ -28,9 +28,4 @@ public class NotePadController {
         return new ResponseEntity<>(notePadService.save(notepad), HttpStatus.CREATED);
     }
 
-    @PostMapping("/saveImage")
-     public ResponseEntity<NotePad> save(@RequestBody Image image){
-        return new ResponseEntity<>(notePadService.save(image), HttpStatus.OK);
-    }
-
 }
