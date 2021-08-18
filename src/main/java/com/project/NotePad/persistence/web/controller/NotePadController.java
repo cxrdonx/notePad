@@ -22,10 +22,16 @@ public class NotePadController {
    public ResponseEntity<List<NotePad>> getAll(){
         return new ResponseEntity<>(notePadService.getAll(), HttpStatus.OK);
     }
-
+    @CrossOrigin(origins = "http://127.0.0.1:5500/")
     @PostMapping("/save")
     public ResponseEntity<NotePad> save(@RequestBody NotePad notepad){
         return new ResponseEntity<>(notePadService.save(notepad), HttpStatus.CREATED);
     }
-
+    @CrossOrigin(origins = "http://127.0.0.1:5500/")
+    @GetMapping("/title/{title}")
+     public ResponseEntity<List<NotePad>> getByTitle(String title){
+        return notePadService.getByTitle(title)
+                .map(notePads -> new ResponseEntity<>(notePads, HttpStatus.OK))
+                .orElse(new ResponseEntity<>(HttpStatus.NOT_FOUND));
+    }
 }
