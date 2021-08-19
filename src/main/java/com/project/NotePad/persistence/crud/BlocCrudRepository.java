@@ -10,5 +10,5 @@ import java.util.List;
 import java.util.Optional;
 
 public interface BlocCrudRepository extends CrudRepository<BlocDeNotas, String> {
-     Optional<List<BlocDeNotas>> findByTitle(String titulo);
+    // Optional<List<BlocDeNotas>> findByTitle(String titulo);
 }

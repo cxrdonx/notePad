@@ -33,9 +33,12 @@ public class BlocDeNotasRepository implements NoteRepository {
               //toNotePad
     }
 
+    /*
     @Override
     public Optional<List<NotePad>> getByTitle(String title) {
          return blocCrudRepository.findByTitle(title).map(BlocDeNotas->mapper.toNotePads(BlocDeNotas));
 
     }
+    */
+
 }

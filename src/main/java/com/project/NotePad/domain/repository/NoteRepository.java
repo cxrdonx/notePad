@@ -12,5 +12,9 @@ import java.util.Optional;
 public interface NoteRepository {
    List<NotePad>getAll();
    NotePad save(NotePad notePad);
+
+   /*
    Optional<List<NotePad>> getByTitle(String title);
+   */
+
 }

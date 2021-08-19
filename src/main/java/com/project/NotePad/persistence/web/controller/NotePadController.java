@@ -27,6 +27,7 @@ public class NotePadController {
     public ResponseEntity<NotePad> save(@RequestBody NotePad notepad){
         return new ResponseEntity<>(notePadService.save(notepad), HttpStatus.CREATED);
     }
+   /*
     @CrossOrigin(origins = "http://127.0.0.1:5500/")
     @GetMapping("/title/{title}")
      public ResponseEntity<List<NotePad>> getByTitle(String title){
@@ -34,4 +35,6 @@ public class NotePadController {
                 .map(notePads -> new ResponseEntity<>(notePads, HttpStatus.OK))
                 .orElse(new ResponseEntity<>(HttpStatus.NOT_FOUND));
     }
+
+    */
 }

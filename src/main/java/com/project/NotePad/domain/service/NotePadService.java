@@ -15,16 +15,17 @@ public class NotePadService {
     @Autowired
     private NoteRepository noteRepository;
 
-    public List<NotePad> getAll() {
+
+    public List<NotePad> getAll(){
         return noteRepository.getAll();
     }
-
     public NotePad save(NotePad notePad) {
         return noteRepository.save(notePad);
     }
 
-    public Optional<List<NotePad>> getByTitle(String title){
+    /*
+    public Optional<List<NotePad>> getByTitle(String title) {
         return noteRepository.getByTitle(title);
-
-}
+    }
+*/
 }
