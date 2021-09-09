@@ -17,12 +17,12 @@ public class NotePadController {
     @Autowired
     private NotePadService notePadService;
 
-    @CrossOrigin(origins = "http://127.0.0.1:5500/")
+    @CrossOrigin(origins = "")
     @GetMapping("/all")
    public ResponseEntity<List<NotePad>> getAll(){
         return new ResponseEntity<>(notePadService.getAll(), HttpStatus.OK);
     }
-    @CrossOrigin(origins = "http://127.0.0.1:5500/")
+    @CrossOrigin(origins = "")
     @PostMapping("/save")
     public ResponseEntity<NotePad> save(@RequestBody NotePad notepad){
         return new ResponseEntity<>(notePadService.save(notepad), HttpStatus.CREATED);
